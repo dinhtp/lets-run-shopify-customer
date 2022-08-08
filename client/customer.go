@@ -8,13 +8,18 @@ import (
 
 const (
     basePath = "customers"
+
+    StateDisabled = "disabled"
+    StateInvited  = "invited"
+    StateEnabled  = "enabled"
+    StateDeclined = "declined"
 )
 
 // CustomerService is an interface for interfacing with the customers endpoints of Shopify API.
 type CustomerService interface {
     List(interface{}) ([]Customer, *Pagination, error)
     Count(interface{}) (int, error)
-    Get(int64, interface{}) (*Customer, error)
+    Get(int64) (*Customer, error)
     Create(*Customer) (*Customer, error)
     Update(*Customer) (*Customer, error)
     Delete(int64) error
@@ -78,11 +83,11 @@ func (s *CustomerServiceOp) Count(options interface{}) (int, error) {
     return s.client.Count(fmt.Sprintf("%s/count.json", basePath), options)
 }
 
-func (s *CustomerServiceOp) Get(customerID int64, options interface{}) (*Customer, error) {
+func (s *CustomerServiceOp) Get(customerID int64) (*Customer, error) {
     path := fmt.Sprintf("%s/%v.json", basePath, customerID)
 
     resource := new(CustomerResource)
-    err := s.client.Get(path, resource, options)
+    err := s.client.Get(path, resource, nil)
 
     return resource.Customer, err
 }
