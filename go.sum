@@ -100,6 +100,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dinhtp/lets-run-pbtype v0.0.0-20220726111307-20fff65a5b2d h1:g6xLpulzPXiKRSZBzjyPUhv3mjzxfl1plyYeHK8Tq7M=
 github.com/dinhtp/lets-run-pbtype v0.0.0-20220726111307-20fff65a5b2d/go.mod h1:DhZsIyqFKlhIoDdntakLryvxldNvZNXhijjzNhZDCVg=
+github.com/dinhtp/lets-run-pbtype v0.0.0-20220808144142-9cde8abebafb h1:A1hHL8dhGLBh22Se/XMbUzGwVpjK9jiNG7IeJhHoQl0=
+github.com/dinhtp/lets-run-pbtype v0.0.0-20220808144142-9cde8abebafb/go.mod h1:DhZsIyqFKlhIoDdntakLryvxldNvZNXhijjzNhZDCVg=
 github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=

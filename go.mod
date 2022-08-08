@@ -3,8 +3,9 @@ module github.com/dinhtp/lets-run-shopify-customer
 go 1.16
 
 require (
+	github.com/dinhtp/lets-run-pbtype v0.0.0-20220808144142-9cde8abebafb
+	github.com/gogo/protobuf v1.3.2
 	github.com/google/go-querystring v1.1.0
-	github.com/dinhtp/lets-run-pbtype v0.0.0-20220726111307-20fff65a5b2d
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/shopspring/decimal v1.3.1
 	github.com/sirupsen/logrus v1.6.0
