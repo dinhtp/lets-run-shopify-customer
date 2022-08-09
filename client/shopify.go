@@ -135,6 +135,9 @@ func (c *Client) NewRequest(method, relPath string, body, options interface{}) (
         }
     }
 
+    fmt.Println("=================")
+    fmt.Println(u.String())
+
     req, err := http.NewRequest(method, u.String(), bytes.NewBuffer(js))
     if err != nil {
         return nil, err
@@ -155,7 +158,7 @@ func (c *Client) createAndDoGetHeaders(method, relPath string, data, options, re
         relPath = strings.TrimLeft(relPath, "/")
     }
 
-    prefix := fmt.Sprintf("%s/%s", "api", c.ApiVersion)
+    prefix := fmt.Sprintf("%s/%s", "admin/api", c.ApiVersion)
 
     relPath = path.Join(prefix, relPath)
     req, err := c.NewRequest(method, relPath, data, options)
